@@ -2,7 +2,7 @@
 
 ### ` Configuration `
 <p align="center">
-    <img src="/Img/configuration.png" alt="Pattern setup" title="Pattern setup">
+    <img src="/img/codigo.PNG" alt="Executando Procedure com dapper" title="Executando Procedure com dapper">
 </p> 
 
 ### ` 💡 Topics Covered`
