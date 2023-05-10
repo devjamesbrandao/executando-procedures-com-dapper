@@ -1,4 +1,3 @@
-
 CREATE PROCEDURE spMarcarBoletoComoPago @id INT, @data_pagamento DATETIME
 AS
 
