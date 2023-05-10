@@ -2,12 +2,16 @@
 using System.Data.SqlClient;
 using Dapper;
 
-using (IDbConnection db = new SqlConnection("Server=localhost; Database=Sales; User Id=sa; Password=Corinthians"))
+using (IDbConnection db = new SqlConnection("CONNECTION STRING"))
 {
     const int id = 1;
 
     // Executa a procedure e passa os parâmetro id e data_pagamento que ela espera receber
-    db.Execute("spMarcarBoletoComoPago", new { id, data_pagamento = DateTime.Now }, commandType: CommandType.StoredProcedure);
+    db.Execute(
+        "spMarcarBoletoComoPago", // nome da procedure
+        new { id, data_pagamento = DateTime.Now }, // parâmetros que a procedure espera
+        commandType: CommandType.StoredProcedure // tipo de comando Procedure
+    );
 }
 
 Console.WriteLine("Boleto marcado como pago.");
